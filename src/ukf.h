@@ -111,7 +111,7 @@ public:
   
 private:
   VectorXd NormalizeAngle(VectorXd &v, int index);
-  void CommonUpdate(MeasurementPackage meas_package, int n_z, MatrixXd Zsig, VectorXd z_pred, MatrixXd S);
+  void CommonUpdate(MeasurementPackage meas_package, int n_z, MatrixXd &Zsig, VectorXd &z_pred, MatrixXd &S);
 };
 
 #endif /* UKF_H */
